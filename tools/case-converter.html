@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Converter — UPPERCASE, lowercase, Title Case Online | ToolBox Free</title>
+<meta name="description" content="Free online case converter. Instantly switch text between UPPERCASE, lowercase, Title Case, Sentence case, camelCase and Alternating Case in your browser.">
+<meta name="keywords" content="case converter, uppercase to lowercase, title case converter, sentence case, camel case generator">
+<link rel="canonical" href="https://www.toolboxfree.example/tools/case-converter.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#161a23">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Case Converter — Free Online Tool | ToolBox Free">
+<meta property="og:description" content="Switch text between UPPERCASE, lowercase, Title Case, Sentence case, camelCase and more, instantly.">
+<meta property="og:url" content="https://www.toolboxfree.example/tools/case-converter.html">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Case Converter",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "url": "https://www.toolboxfree.example/tools/case-converter.html",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand" aria-label="ToolBox Free home">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6.5a3.5 3.5 0 0 1-4.3 4.3L8.6 17.9a1.4 1.4 0 0 1-2-2l7.1-7.1A3.5 3.5 0 0 1 18 4.5l-2.3 2.3 1.1 1.1L19.1 5.6z" stroke="#ff5a1f" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+      Tool<span class="accent">Box</span>&nbsp;Free
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/tools/image-compressor.html">Image Compressor</a>
+      <a href="/tools/word-counter.html">Word Counter</a>
+      <a href="/tools/percentage-calculator.html">Percentage Calculator</a>
+      <a href="/tools/password-generator.html">Password Generator</a>
+      <a href="/tools/case-converter.html" aria-current="page">Case Converter</a>
+      <a href="/tools/qr-code-generator.html">QR Generator</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="tool-page-header">
+    <div class="container">
+      <div class="breadcrumbs"><a href="/">Home</a><span>/</span><span>Case Converter</span></div>
+      <h1>
+        <span class="tool-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18L8 6h1.2l4 12M5.4 14h6.4M14 18l3-8 3 8M14.8 15.5h4.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        Case Converter
+      </h1>
+      <p>Paste your text, pick a case style, and copy the result. Every conversion runs instantly in your browser.</p>
+    </div>
+  </section>
+
+  <section class="tool-workspace">
+    <div class="container">
+      <div class="workspace-grid">
+        <div class="workspace-panel">
+          <div class="field">
+            <label for="cc-input">Your text</label>
+            <textarea id="cc-input" rows="10" placeholder="Type or paste text here…" spellcheck="false"></textarea>
+          </div>
+          <div class="actions-row" style="flex-wrap:wrap;">
+            <button class="btn btn-primary" data-case="upper" type="button">UPPERCASE</button>
+            <button class="btn btn-secondary" data-case="lower" type="button">lowercase</button>
+            <button class="btn btn-secondary" data-case="title" type="button">Title Case</button>
+            <button class="btn btn-secondary" data-case="sentence" type="button">Sentence case</button>
+            <button class="btn btn-secondary" data-case="camel" type="button">camelCase</button>
+            <button class="btn btn-secondary" data-case="alternating" type="button">aLtErNaTiNg</button>
+          </div>
+        </div>
+
+        <div class="workspace-panel">
+          <h3 class="mt-0" style="font-family:var(--font-display);font-size:1rem;">Result</h3>
+          <div class="field">
+            <textarea id="cc-output" rows="10" readonly placeholder="Your converted text will appear here…"></textarea>
+          </div>
+          <button class="btn btn-secondary btn-block" id="cc-copy" type="button">Copy result</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container info-block">
+      <h2>When to use each case style</h2>
+      <p>UPPERCASE and lowercase are useful for headings or normalising data. Title Case capitalises the first letter of each major word, which is common for headlines. Sentence case capitalises only the first letter of the first word, matching normal prose. camelCase is common in programming for variable names, and Alternating Case is a playful style sometimes used for emphasis.</p>
+      <h2>Frequently asked questions</h2>
+      <details class="faq-item">
+        <summary>Does the converter change punctuation or numbers?</summary>
+        <p>No, punctuation, numbers and symbols are left untouched — only the casing of letters is changed.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is my text stored anywhere?</summary>
+        <p>No. All conversion happens locally in your browser using JavaScript, and nothing is uploaded or saved.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Keep going</span><h2>Related tools</h2></div>
+      <div class="related-grid">
+        <a class="related-card" href="/tools/word-counter.html"><b>Word Counter</b><span>Count words, characters and reading time.</span></a>
+        <a class="related-card" href="/tools/password-generator.html"><b>Password Generator</b><span>Create a strong, random password in one click.</span></a>
+        <a class="related-card" href="/tools/qr-code-generator.html"><b>QR Code Generator</b><span>Turn text or a link into a QR code.</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6.5a3.5 3.5 0 0 1-4.3 4.3L8.6 17.9a1.4 1.4 0 0 1-2-2l7.1-7.1A3.5 3.5 0 0 1 18 4.5l-2.3 2.3 1.1 1.1L19.1 5.6z" stroke="#ff5a1f" stroke-width="1.4" stroke-linejoin="round"/></svg></span>ToolBox Free</a>
+        <p>A small set of everyday tools that run entirely in your browser. No sign-up, no uploads, no ads.</p>
+      </div>
+      <nav class="footer-col" aria-label="Tools">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="/tools/image-compressor.html">Image Compressor</a></li>
+          <li><a href="/tools/word-counter.html">Word Counter</a></li>
+          <li><a href="/tools/percentage-calculator.html">Percentage Calculator</a></li>
+          <li><a href="/tools/password-generator.html">Password Generator</a></li>
+          <li><a href="/tools/case-converter.html">Case Converter</a></li>
+          <li><a href="/tools/qr-code-generator.html">QR Code Generator</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul><li><a href="/#tools">All tools</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul><li><a href="/#">Privacy-first by design</a></li><li><a href="/#">No paid APIs used</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> ToolBox Free. All tools run locally in your browser.</span>
+      <span>Built with HTML, CSS &amp; JavaScript.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><span class="dot"></span><span class="toast-message"></span></div>
+
+<script src="/js/main.js"></script>
+<script src="/js/tools/case-converter.js"></script>
+</body>
+</html>

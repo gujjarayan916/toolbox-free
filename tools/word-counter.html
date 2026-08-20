@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Word Counter — Count Words, Characters &amp; Reading Time Free | ToolBox Free</title>
+<meta name="description" content="Free online word counter. Instantly count words, characters, sentences, paragraphs and estimated reading time as you type or paste text. Runs entirely in your browser.">
+<meta name="keywords" content="word counter, character counter, count words online, reading time calculator">
+<link rel="canonical" href="https://www.toolboxfree.example/tools/word-counter.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#161a23">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Word Counter — Free Online Tool | ToolBox Free">
+<meta property="og:description" content="Count words, characters, sentences and reading time instantly. No sign-up, runs in your browser.">
+<meta property="og:url" content="https://www.toolboxfree.example/tools/word-counter.html">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Word Counter",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "url": "https://www.toolboxfree.example/tools/word-counter.html",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How is reading time calculated?","acceptedAnswer":{"@type":"Answer","text":"Reading time is estimated using an average adult silent reading speed of 200 words per minute."}},
+    {"@type":"Question","name":"Does the word counter store my text?","acceptedAnswer":{"@type":"Answer","text":"No. All counting happens in your browser with JavaScript. Nothing you type is sent to a server or saved."}}
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand" aria-label="ToolBox Free home">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6.5a3.5 3.5 0 0 1-4.3 4.3L8.6 17.9a1.4 1.4 0 0 1-2-2l7.1-7.1A3.5 3.5 0 0 1 18 4.5l-2.3 2.3 1.1 1.1L19.1 5.6z" stroke="#ff5a1f" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+      Tool<span class="accent">Box</span>&nbsp;Free
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/tools/image-compressor.html">Image Compressor</a>
+      <a href="/tools/word-counter.html" aria-current="page">Word Counter</a>
+      <a href="/tools/percentage-calculator.html">Percentage Calculator</a>
+      <a href="/tools/password-generator.html">Password Generator</a>
+      <a href="/tools/case-converter.html">Case Converter</a>
+      <a href="/tools/qr-code-generator.html">QR Generator</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="tool-page-header">
+    <div class="container">
+      <div class="breadcrumbs"><a href="/">Home</a><span>/</span><span>Word Counter</span></div>
+      <h1>
+        <span class="tool-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        Word Counter
+      </h1>
+      <p>Count words, characters, sentences, paragraphs and estimated reading time as you type or paste. Everything updates live, right here in your browser.</p>
+    </div>
+  </section>
+
+  <section class="tool-workspace">
+    <div class="container">
+      <div class="privacy-note">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 4.5-3 8.2-7 9-4-.8-7-4.5-7-9V6l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Your text is counted locally in your browser. It's never uploaded or stored anywhere.</span>
+      </div>
+
+      <div class="workspace-grid">
+        <div class="workspace-panel">
+          <div class="field">
+            <label for="wc-input">Your text</label>
+            <textarea id="wc-input" rows="14" placeholder="Start typing or paste your text here…" spellcheck="false"></textarea>
+            <p class="hint" id="wc-hint">0 words</p>
+          </div>
+          <div class="actions-row">
+            <button class="btn btn-secondary" id="wc-clear" type="button">Clear text</button>
+            <button class="btn btn-secondary" id="wc-copy" type="button">Copy text</button>
+          </div>
+        </div>
+
+        <div class="workspace-panel">
+          <h3 class="mt-0" style="font-family:var(--font-display);font-size:1rem;">Statistics</h3>
+          <div class="stat-grid">
+            <div class="stat-box highlight"><b id="stat-words">0</b><span>Words</span></div>
+            <div class="stat-box"><b id="stat-chars">0</b><span>Characters</span></div>
+            <div class="stat-box"><b id="stat-chars-ns">0</b><span>Chars (no spaces)</span></div>
+            <div class="stat-box"><b id="stat-sentences">0</b><span>Sentences</span></div>
+            <div class="stat-box"><b id="stat-paragraphs">0</b><span>Paragraphs</span></div>
+            <div class="stat-box good"><b id="stat-reading">0 min</b><span>Reading time</span></div>
+          </div>
+          <p class="hint">Reading time is estimated at 200 words per minute.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container info-block">
+      <h2>How the word counter works</h2>
+      <p>Type or paste any text into the box above. The tool splits your text on whitespace to count words, counts every character including and excluding spaces, splits on sentence-ending punctuation to estimate sentences, and counts paragraphs by line breaks. All of this happens instantly in your browser as you type — nothing is sent anywhere.</p>
+      <h2>Frequently asked questions</h2>
+      <details class="faq-item">
+        <summary>How is reading time calculated?</summary>
+        <p>Reading time is estimated using an average adult silent reading speed of 200 words per minute, rounded up to the nearest minute.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Does this tool store or upload my text?</summary>
+        <p>No. All counting happens locally in your browser using JavaScript. Your text is never sent to a server, logged, or saved after you leave the page.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is there a limit to how much text I can paste in?</summary>
+        <p>No hard limit is enforced, though extremely large documents (hundreds of thousands of words) may feel slightly slower since counting runs on your device.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Keep going</span><h2>Related tools</h2></div>
+      <div class="related-grid">
+        <a class="related-card" href="/tools/case-converter.html"><b>Case Converter</b><span>Switch text between UPPERCASE, lowercase and Title Case.</span></a>
+        <a class="related-card" href="/tools/password-generator.html"><b>Password Generator</b><span>Create a strong, random password in one click.</span></a>
+        <a class="related-card" href="/tools/percentage-calculator.html"><b>Percentage Calculator</b><span>Work out percentages and percentage changes.</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6.5a3.5 3.5 0 0 1-4.3 4.3L8.6 17.9a1.4 1.4 0 0 1-2-2l7.1-7.1A3.5 3.5 0 0 1 18 4.5l-2.3 2.3 1.1 1.1L19.1 5.6z" stroke="#ff5a1f" stroke-width="1.4" stroke-linejoin="round"/></svg></span>ToolBox Free</a>
+        <p>A small set of everyday tools that run entirely in your browser. No sign-up, no uploads, no ads.</p>
+      </div>
+      <nav class="footer-col" aria-label="Tools">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="/tools/image-compressor.html">Image Compressor</a></li>
+          <li><a href="/tools/word-counter.html">Word Counter</a></li>
+          <li><a href="/tools/percentage-calculator.html">Percentage Calculator</a></li>
+          <li><a href="/tools/password-generator.html">Password Generator</a></li>
+          <li><a href="/tools/case-converter.html">Case Converter</a></li>
+          <li><a href="/tools/qr-code-generator.html">QR Code Generator</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul><li><a href="/#tools">All tools</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul><li><a href="/#">Privacy-first by design</a></li><li><a href="/#">No paid APIs used</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> ToolBox Free. All tools run locally in your browser.</span>
+      <span>Built with HTML, CSS &amp; JavaScript.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><span class="dot"></span><span class="toast-message"></span></div>
+
+<script src="/js/main.js"></script>
+<script src="/js/tools/word-counter.js"></script>
+</body>
+</html>

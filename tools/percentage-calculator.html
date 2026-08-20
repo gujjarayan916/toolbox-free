@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Percentage Calculator — Free Online Percent Tool | ToolBox Free</title>
+<meta name="description" content="Free online percentage calculator. Find what X% of Y is, work out percentage increase or decrease, and calculate what percent one number is of another.">
+<meta name="keywords" content="percentage calculator, percent increase calculator, percent decrease calculator, what percent of">
+<link rel="canonical" href="https://www.toolboxfree.example/tools/percentage-calculator.html">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#161a23">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Percentage Calculator — Free Online Tool | ToolBox Free">
+<meta property="og:description" content="Calculate percentages, increases, decreases and percentage differences instantly in your browser.">
+<meta property="og:url" content="https://www.toolboxfree.example/tools/percentage-calculator.html">
+<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Percentage Calculator",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (runs in browser)",
+  "url": "https://www.toolboxfree.example/tools/percentage-calculator.html",
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/" class="brand" aria-label="ToolBox Free home">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6.5a3.5 3.5 0 0 1-4.3 4.3L8.6 17.9a1.4 1.4 0 0 1-2-2l7.1-7.1A3.5 3.5 0 0 1 18 4.5l-2.3 2.3 1.1 1.1L19.1 5.6z" stroke="#ff5a1f" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+      Tool<span class="accent">Box</span>&nbsp;Free
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+      <svg viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/tools/image-compressor.html">Image Compressor</a>
+      <a href="/tools/word-counter.html">Word Counter</a>
+      <a href="/tools/percentage-calculator.html" aria-current="page">Percentage Calculator</a>
+      <a href="/tools/password-generator.html">Password Generator</a>
+      <a href="/tools/case-converter.html">Case Converter</a>
+      <a href="/tools/qr-code-generator.html">QR Generator</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="tool-page-header">
+    <div class="container">
+      <div class="breadcrumbs"><a href="/">Home</a><span>/</span><span>Percentage Calculator</span></div>
+      <h1>
+        <span class="tool-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="7" cy="7" r="2.2" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="17" r="2.2" stroke="currentColor" stroke-width="1.6"/><path d="M18 6L6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+        Percentage Calculator
+      </h1>
+      <p>Three common percentage problems, solved instantly. Pick a calculation, enter your numbers, and see the result update live.</p>
+    </div>
+  </section>
+
+  <section class="tool-workspace">
+    <div class="container">
+      <div class="workspace-grid">
+        <div class="workspace-panel">
+
+          <div class="field">
+            <label for="pc-mode">Calculation type</label>
+            <select id="pc-mode">
+              <option value="basic">What is X% of Y?</option>
+              <option value="isWhatPercent">X is what percent of Y?</option>
+              <option value="change">Percentage increase / decrease from X to Y</option>
+            </select>
+          </div>
+
+          <div id="pc-basic" class="pc-panel">
+            <div class="row">
+              <div class="field">
+                <label for="pc-basic-x">Percentage (%)</label>
+                <input type="number" id="pc-basic-x" placeholder="e.g. 15" inputmode="decimal">
+              </div>
+              <div class="field">
+                <label for="pc-basic-y">Of value</label>
+                <input type="number" id="pc-basic-y" placeholder="e.g. 200" inputmode="decimal">
+              </div>
+            </div>
+          </div>
+
+          <div id="pc-iswhat" class="pc-panel" hidden>
+            <div class="row">
+              <div class="field">
+                <label for="pc-iswhat-x">Value</label>
+                <input type="number" id="pc-iswhat-x" placeholder="e.g. 30" inputmode="decimal">
+              </div>
+              <div class="field">
+                <label for="pc-iswhat-y">Out of</label>
+                <input type="number" id="pc-iswhat-y" placeholder="e.g. 120" inputmode="decimal">
+              </div>
+            </div>
+          </div>
+
+          <div id="pc-change" class="pc-panel" hidden>
+            <div class="row">
+              <div class="field">
+                <label for="pc-change-x">From value</label>
+                <input type="number" id="pc-change-x" placeholder="e.g. 80" inputmode="decimal">
+              </div>
+              <div class="field">
+                <label for="pc-change-y">To value</label>
+                <input type="number" id="pc-change-y" placeholder="e.g. 100" inputmode="decimal">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="workspace-panel">
+          <h3 class="mt-0" style="font-family:var(--font-display);font-size:1rem;">Result</h3>
+          <div class="result-panel">
+            <div class="stat-box highlight" style="width:100%;">
+              <b id="pc-result">—</b>
+              <span id="pc-result-label">Enter values to calculate</span>
+            </div>
+          </div>
+          <p class="hint" id="pc-explain"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container info-block">
+      <h2>How to calculate a percentage</h2>
+      <p>To find what X% of Y is, multiply Y by X and divide by 100. To find what percent X is of Y, divide X by Y and multiply by 100. To find a percentage increase or decrease between two numbers, subtract the starting value from the new value, divide by the starting value, then multiply by 100 — a positive result is an increase, a negative result is a decrease.</p>
+      <h2>Frequently asked questions</h2>
+      <details class="faq-item">
+        <summary>How do I calculate a percentage discount?</summary>
+        <p>Use "What is X% of Y?" with X as the discount percentage and Y as the original price to find the amount taken off, then subtract that from the original price.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What does a negative percentage change mean?</summary>
+        <p>A negative result in the increase/decrease calculation means the value went down. For example, going from 100 to 80 is a −20% change.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head"><span class="eyebrow">Keep going</span><h2>Related tools</h2></div>
+      <div class="related-grid">
+        <a class="related-card" href="/tools/word-counter.html"><b>Word Counter</b><span>Count words, characters and reading time.</span></a>
+        <a class="related-card" href="/tools/case-converter.html"><b>Case Converter</b><span>Switch text between UPPERCASE, lowercase and Title Case.</span></a>
+        <a class="related-card" href="/tools/password-generator.html"><b>Password Generator</b><span>Create a strong, random password in one click.</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="brand"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6.5a3.5 3.5 0 0 1-4.3 4.3L8.6 17.9a1.4 1.4 0 0 1-2-2l7.1-7.1A3.5 3.5 0 0 1 18 4.5l-2.3 2.3 1.1 1.1L19.1 5.6z" stroke="#ff5a1f" stroke-width="1.4" stroke-linejoin="round"/></svg></span>ToolBox Free</a>
+        <p>A small set of everyday tools that run entirely in your browser. No sign-up, no uploads, no ads.</p>
+      </div>
+      <nav class="footer-col" aria-label="Tools">
+        <h4>Tools</h4>
+        <ul>
+          <li><a href="/tools/image-compressor.html">Image Compressor</a></li>
+          <li><a href="/tools/word-counter.html">Word Counter</a></li>
+          <li><a href="/tools/percentage-calculator.html">Percentage Calculator</a></li>
+          <li><a href="/tools/password-generator.html">Password Generator</a></li>
+          <li><a href="/tools/case-converter.html">Case Converter</a></li>
+          <li><a href="/tools/qr-code-generator.html">QR Code Generator</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul><li><a href="/#tools">All tools</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h4>About</h4>
+        <ul><li><a href="/#">Privacy-first by design</a></li><li><a href="/#">No paid APIs used</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> ToolBox Free. All tools run locally in your browser.</span>
+      <span>Built with HTML, CSS &amp; JavaScript.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><span class="dot"></span><span class="toast-message"></span></div>
+
+<script src="/js/main.js"></script>
+<script src="/js/tools/percentage-calculator.js"></script>
+</body>
+</html>
