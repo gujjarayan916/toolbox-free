@@ -1,0 +1,12 @@
+{
+  "name": "ToolBox Free",
+  "short_name": "ToolBox Free",
+  "description": "Free online tools that run entirely in your browser.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2f4f6",
+  "theme_color": "#161a23",
+  "icons": [
+    { "src": "/assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
