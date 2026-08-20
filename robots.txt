@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.toolboxfree.example/sitemap.xml
+Sitemap: https://gujjarayan916.github.io/toolbox-free/sitemap.xml

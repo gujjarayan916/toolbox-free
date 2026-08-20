@@ -36,11 +36,15 @@ Then open `http://localhost:8080/` in your browser. Opening `index.html` directl
 
 ## Deploying
 
-Upload the contents of this folder as-is to any static host (Netlify, Vercel, GitHub Pages, Cloudflare Pages, S3, or a plain web server). There is nothing to build or install.
+This project is currently deployed on GitHub Pages at:
 
-Before going live:
-- Replace `https://www.toolboxfree.example` in `index.html`, every file in `tools/`, `sitemap.xml` and `robots.txt` with your real domain (search and replace across the project).
-- If you deploy into a subdirectory instead of a domain root, change the root-relative asset paths (`/css/style.css`, `/js/...`, `/tools/...`) to match.
+**https://gujjarayan916.github.io/toolbox-free/**
+
+Because GitHub Pages project sites are served from a `/toolbox-free/` subdirectory rather than a domain root, every internal link, stylesheet, script, favicon and manifest reference uses **relative paths** (e.g. `css/style.css` on the homepage, `../css/style.css` from pages inside `tools/`) instead of root-relative paths (`/css/style.css`). This makes the site portable — it will keep working correctly whether it's hosted at a domain root, a subdirectory, or moved to a different static host.
+
+To deploy elsewhere:
+- Upload the contents of this folder as-is to any static host (Netlify, Vercel, Cloudflare Pages, S3, or a plain web server) — nothing to build or install.
+- If you move to a different domain, update the absolute URLs in `sitemap.xml`, `robots.txt`, and the `<link rel="canonical">` / Open Graph / JSON-LD tags in each HTML file's `<head>` (search for `gujjarayan916.github.io/toolbox-free` and replace with your new URL). These are intentionally absolute because sitemaps, canonical tags and Open Graph metadata are required to use full URLs — everything else (CSS, JS, nav, tool links) is relative and needs no changes.
 
 ## Privacy and architecture notes
 
