@@ -791,13 +791,6 @@ input[type="range"] {
   white-space: nowrap; border: 0;
 }
 .brand-logo {
-  width: 170px;
-  height: auto;
-  display: block;
-  object-fit: contain;
-}
-.brand-logo {
   width: 120px;
   height: auto;
   display: block;
-}
